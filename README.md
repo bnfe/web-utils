@@ -16,7 +16,7 @@ yarn add @bnfe/web-utils -S
 
 ```js
 // 示例1
-import butils from '@bnfe/web-utils'
+import * as butils from '@bnfe/web-utils'
 console.log(butils.random(1, 10))
 
 // 示例2
@@ -44,7 +44,7 @@ console.log(random(1, 10), uuid())
 <!DOCTYPE html>
 <html lang="en">
   <body>
-    <script src="/dist/web-utils.js"></script>
+    <script src="/dist/web-utils.umd.js"></script>
     <script>
       console.log(butils.random(1, 10))
     </script>
