@@ -1,6 +1,6 @@
 {
   "name": "@bnfe/web-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "巴奴前端常用工具函数",
   "author": "mirror",
   "license": "MIT",
@@ -8,13 +8,12 @@
   "main": "dist/web-utils.cjs.js",
   "module": "dist/web-utils.esm.js",
   "browser": "dist/web-utils.umd.js",
-  "type": "module",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "npm run clean && rollup -c",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",

@@ -13,7 +13,7 @@ export default {
       name: 'butils'
     },
     {
-      format: 'esm',
+      format: 'es',
       file: 'dist/web-utils.esm.js',
       name: 'butils'
     },
