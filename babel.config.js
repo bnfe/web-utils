@@ -3,11 +3,14 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        targets: {
-          node: 'current'
-        }
+        // corejs: 3,
+        // useBuiltIns: 'usage',
+        // targets: {
+        //   chrome: '58'
+        // }
       }
     ],
     '@babel/preset-typescript'
-  ]
+  ],
+  plugins: ['@babel/plugin-transform-runtime']
 }
